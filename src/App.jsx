@@ -23,6 +23,7 @@ import PlanContinuidad from './components/sections/PlanContinuidad';
 
 function App() {
   const [currentSection, setCurrentSection] = useState('portada');
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   const sections = [
     { id: 'portada', title: 'Portada', component: Portada },
@@ -48,30 +49,34 @@ function App() {
   const CurrentComponent = sections.find(s => s.id === currentSection)?.component;
 
   return (
-    <>
-      <Header />
+    <div className="app-container">
       <Navigation 
         sections={sections} 
         currentSection={currentSection} 
-        setCurrentSection={setCurrentSection} 
+        setCurrentSection={setCurrentSection}
+        isMobileOpen={isMobileOpen}
+        setIsMobileOpen={setIsMobileOpen}
       />
       
-      <div style={{ maxWidth: '1400px', margin: '3rem auto', padding: '0 2rem' }}>
-        {CurrentComponent && <CurrentComponent />}
-      </div>
-
-      <footer style={{ 
-        background: 'var(--deep-navy)', 
-        color: 'white', 
-        padding: '2rem', 
-        textAlign: 'center', 
-        marginTop: '4rem' 
-      }}>
-        <p style={{ opacity: '0.8' }}>
-          © 2025 EmpresIA - Gobierno de TI | Instituto Politécnico Nacional - ESCOM
-        </p>
-      </footer>
-    </>
+      <main className="main-content">
+        <Header toggleSidebar={() => setIsMobileOpen(!isMobileOpen)} />
+        
+        <div className="content-wrapper fade-in" key={currentSection} style={{ padding: '0' }}>
+          {CurrentComponent && <CurrentComponent />}
+        </div>
+        
+        <footer style={{ 
+          marginTop: '4rem', 
+          padding: '2rem', 
+          textAlign: 'center', 
+          borderTop: '1px solid var(--border-color)',
+          color: 'var(--text-muted)',
+          fontSize: '0.9rem'
+        }}>
+          <p>© 2025 EmpresIA - Gobierno de TI | IPN ESCOM</p>
+        </footer>
+      </main>
+    </div>
   );
 }
 

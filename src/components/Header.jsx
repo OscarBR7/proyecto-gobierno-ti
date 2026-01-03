@@ -1,43 +1,88 @@
-function Header() {
+function Header({ toggleSidebar }) {
   return (
-    <div style={{
-      background: 'linear-gradient(135deg, var(--deep-navy) 0%, #1E3A5F 100%)',
-      color: 'white',
-      padding: '2rem 0',
-      position: 'relative',
-      overflow: 'hidden'
+    <header style={{
+      height: 'var(--header-height)',
+      background: 'rgba(15, 23, 42, 0.8)',
+      backdropFilter: 'blur(12px)',
+      borderBottom: '1px solid var(--border-color)',
+      display: 'flex',
+      alignItems: 'center',
+      padding: '0 1.5rem',
+      position: 'sticky',
+      top: 0,
+      zIndex: 30,
+      justifyContent: 'space-between'
     }}>
-      <div style={{
-        maxWidth: '1400px',
-        margin: '0 auto',
-        padding: '0 2rem',
-        position: 'relative',
-        zIndex: 1
-      }}>
-        <div style={{
-          fontFamily: 'Sora, sans-serif',
-          fontSize: '2.5rem',
-          fontWeight: '800',
-          background: 'linear-gradient(135deg, var(--electric-blue), var(--cyan))',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          marginBottom: '0.5rem',
-          display: 'inline-block'
-        }}>
-          EmpresIA
-        </div>
-        <div style={{ fontSize: '1.1rem', color: 'var(--cyan)', opacity: 0.9, fontWeight: '500' }}>
-          Consultoría e Implementación de Soluciones de IA
-        </div>
-        <div style={{ marginTop: '1.5rem', fontSize: '0.95rem', opacity: 0.8 }}>
-          <div><strong>Proyecto Final:</strong> Gobierno de TI</div>
-          <div><strong>Alumnos:</strong> Acosta Osorio Christian, Briones Rayo Oscar, Nava Villar Eric</div>
-          <div><strong>Grupo:</strong> 7CV2 | <strong>Profesora:</strong> Rocío Palacios Solano</div>
-          <div><strong>IPN - ESCOM</strong></div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <button
+          onClick={toggleSidebar}
+          style={{
+            background: 'transparent',
+            border: '1px solid var(--border-color)',
+            color: 'var(--text-main)',
+            padding: '0.5rem',
+            borderRadius: 'var(--radius-sm)',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            // Hide on desktop
+          }}
+          className="mobile-toggle"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M3 12h18M3 6h18M3 18h18" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+
+        <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
+          <span style={{ color: 'var(--secondary)' }}>Gobierno de TI</span> /
+          <span style={{ marginLeft: '0.5rem', color: 'var(--text-main)' }}>Presentación Final</span>
         </div>
       </div>
-    </div>
+
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        <div style={{
+          fontSize: '0.85rem',
+          color: 'var(--text-muted)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem'
+        }} className="header-info">
+          <span>7CV2</span>
+          <span style={{ width: '1px', height: '12px', background: 'var(--border-color)' }}></span>
+          <span>Equipo 1</span>
+        </div>
+
+        <div style={{
+          width: '32px',
+          height: '32px',
+          borderRadius: '50%',
+          background: 'var(--gradient-primary)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontSize: '0.8rem',
+          fontWeight: 'bold',
+          color: 'white'
+        }}>
+          IPN
+        </div>
+      </div>
+
+      <style>{`
+        @media (min-width: 1025px) {
+          .mobile-toggle {
+            display: none !important;
+          }
+        }
+        @media (max-width: 640px) {
+          .header-info {
+            display: none !important;
+          }
+        }
+      `}</style>
+    </header>
   );
 }
 
