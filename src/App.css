@@ -1,0 +1,149 @@
+:root {
+  --deep-navy: #0A1628;
+  --electric-blue: #0EA5E9;
+  --cyan: #06B6D4;
+  --amber: #F59E0B;
+  --slate: #64748B;
+  --light-bg: #F8FAFC;
+  --card-bg: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, var(--light-bg) 0%, #E2E8F0 100%);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.section {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.section.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--electric-blue);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(14, 165, 233, 0.15);
+}
+
+.card-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--deep-navy);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-title::before {
+  content: '';
+  width: 4px;
+  height: 2rem;
+  background: linear-gradient(135deg, var(--electric-blue), var(--cyan));
+  border-radius: 2px;
+}
+
+.card-content {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin: 2rem 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+thead {
+  background: linear-gradient(135deg, var(--deep-navy), #1E3A5F);
+  color: white;
+}
+
+th {
+  padding: 1rem;
+  text-align: left;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+tbody tr {
+  border-bottom: 1px solid #E2E8F0;
+  transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+  background: rgba(14, 165, 233, 0.05);
+}
+
+td {
+  padding: 1rem;
+  color: var(--text-secondary);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(14, 165, 233, 0.2);
+  border-radius: 20px;
+  color: var(--cyan);
+  font-weight: 600;
+  margin: 0.25rem;
+  font-size: 0.9rem;
+}
+
+ul, ol {
+  padding-left: 2rem;
+  margin: 1rem 0;
+}
+
+li {
+  margin: 0.5rem 0;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
