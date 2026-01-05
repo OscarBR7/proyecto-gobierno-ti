@@ -18,8 +18,9 @@ function Objetivo() {
               fontWeight: '500',
               fontStyle: 'italic'
             }}>
-              "Implementar soluciones de inteligencia artificial que optimicen los procesos empresariales mediante automatización,
-              análisis predictivo y toma de decisiones basada en datos, impulsando la eficiencia operativa y la competitividad organizacional."
+              "Implementar soluciones de inteligencia artificial que optimicen los procesos empresariales mediante automatización, análisis
+              predictivo y toma de decisiones basada en datos, impulsando la eficiencia operativa y la competitividad organizacional.
+              "
             </p>
           </div>
         </div>

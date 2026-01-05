@@ -4,12 +4,8 @@ function CasoNegocio() {
   return (
     <div className="fade-in">
       <div className="card">
-        <h2 className="card-title">Caso de Negocio</h2>
+        <h2 className="card-title">Factibilidad y Caso de Negocio</h2>
         <div className="card-content">
-          <p style={{ marginBottom: '2rem', color: 'var(--text-muted)' }}>
-            Justificación de la inversión en el proyecto de TI, incluyendo análisis de costos, beneficios, riesgos y cronograma.
-          </p>
-
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginBottom: '3rem' }}>
             <div style={{ background: 'var(--bg-dark)', padding: '1.5rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', color: 'var(--text-main)', marginBottom: '1rem' }}>Datos del Proyecto</h3>
@@ -25,10 +21,6 @@ function CasoNegocio() {
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                   <span style={{ color: 'var(--text-muted)' }}>Fin</span>
                   <span style={{ fontWeight: '600' }}>07/01/2026</span>
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                  <span style={{ color: 'var(--text-muted)' }}>Duración</span>
-                  <span style={{ fontWeight: '600' }}>136 días</span>
                 </div>
               </div>
             </div>
@@ -84,12 +76,20 @@ function CasoNegocio() {
 
         </div>
       </div>
-
+      <br />
       <div className="card" style={{ padding: '1rem' }}>
-        <h3 style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>Documento Completo</h3>
+        <h3 style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>Documentación Adjunta</h3>
         <PDFViewer
-          src="/pdfs/Estudiofactibilidad.pdf"
-          title="Ver Estudio de Factibilidad"
+          src="/pdfs/Estudio-factibilidad.pdf"
+          title="Ver Estudio de Factibilidad Detallado"
+        />
+      </div>
+      <br />
+      <div className="card" style={{ padding: '1rem' }}>
+        <h3 style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>Documentación Adjunta</h3>
+        <PDFViewer
+          src="/pdfs/caso_de_negocio.pdf"
+          title="Ver Caso de Negocio Detallado"
         />
       </div>
     </div>

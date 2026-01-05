@@ -5,8 +5,7 @@ function MetasTI() {
         <h2 className="card-title">Metas de TI</h2>
         <div className="card-content">
           <p style={{ marginBottom: '2rem', color: 'var(--text-muted)' }}>
-            Metas específicas del área de Tecnologías de la Información para respaldar las metas corporativas y asegurar el cumplimiento
-            de la estrategia organizacional.
+            Metas específicas del área de Tecnologías de la Información para respaldar las metas corporativas y asegurar el cumplimiento de la estrategia organizacional.
           </p>
 
           <div className="table-container">
@@ -15,29 +14,24 @@ function MetasTI() {
                 <tr>
                   <th style={{ width: '30%' }}>Perspectiva</th>
                   <th>Meta de TI</th>
-                  <th style={{ width: '10%' }}>Meta</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><span className="badge badge-success">Financiera</span></td>
-                  <td>Reducir costos de infraestructura (Cloud/Virtualización)</td>
-                  <td style={{ fontWeight: 'bold', color: 'var(--success)' }}>-15%</td>
+                  <td>Reducir en un 15% los costos de infraestructura (Cloud/Virtualización).</td>
                 </tr>
                 <tr>
-                  <td><span className="badge badge-warning">Clientes</span></td>
-                  <td>Satisfacción del cliente en servicios de TI</td>
-                  <td style={{ fontWeight: 'bold', color: 'var(--secondary)' }}>95%</td>
+                  <td><span className="badge badge-warning">Clientes / Usuarios</span></td>
+                  <td>Tener un 95% de la satisfacción del cliente en servicios de TI.</td>
                 </tr>
                 <tr>
-                  <td><span className="badge">Procesos</span></td>
-                  <td>Automatización de despliegue y pruebas</td>
-                  <td style={{ fontWeight: 'bold', color: 'var(--secondary)' }}>80%</td>
+                  <td><span className="badge">Procesos Internos</span></td>
+                  <td>Ejecutar al menos 3 simulacros mensuales de respuesta a incidintes con documentación formal de resultados y acciones de mejora.</td>
                 </tr>
                 <tr>
                   <td><span className="badge badge-danger">Aprendizaje</span></td>
-                  <td>Certificación del equipo técnico en IA/ML</td>
-                  <td style={{ fontWeight: 'bold', color: 'var(--success)' }}>100%</td>
+                  <td>Tener un 90% del equipo técnico con certificaciones en IA/ML.</td>
                 </tr>
               </tbody>
             </table>

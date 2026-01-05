@@ -4,10 +4,10 @@ function MetasCorporativas() {
   return (
     <div className="fade-in">
       <div className="card">
-        <h2 className="card-title">Metas Corporativas (BSC)</h2>
+        <h2 className="card-title">Metas Corporativas (Balanced ScoreCard)</h2>
         <div className="card-content">
           <p style={{ marginBottom: '2rem', color: 'var(--text-muted)' }}>
-            Metas estratégicas definidas utilizando COBIT y el framework de Balanced Scorecard para alinear las actividades operativas
+            Las Metas estratégicas definidas utilizando COBIT para alinear las actividades operativas
             con la visión y objetivos estratégicos de EmpresIA.
           </p>
 
@@ -17,29 +17,24 @@ function MetasCorporativas() {
                 <tr>
                   <th style={{ width: '30%' }}>Perspectiva</th>
                   <th>Meta Estratégica</th>
-                  <th style={{ width: '15%' }}>KPI Objetivo</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td><span className="badge badge-success">Financiera</span></td>
-                  <td>Optimizar costos operativos mediante automatización</td>
-                  <td style={{ fontWeight: 'bold' }}>10% 📉</td>
+                  <td>Optimizar costos operativos en un 10% mediante automatización.</td>
                 </tr>
                 <tr>
-                  <td><span className="badge badge-warning">Clientes</span></td>
-                  <td>Ampliar la cartera de clientes en mercado PYME</td>
-                  <td style={{ fontWeight: 'bold' }}>15% 📈</td>
+                  <td><span className="badge badge-warning">Clientes / Usuarios</span></td>
+                  <td>Ampliar la cartera de clientes en un 15% en el mercado PYME.</td>
                 </tr>
                 <tr>
-                  <td><span className="badge">Procesos</span></td>
-                  <td>Sistema centralizado de monitoreo y gestión de incidentes</td>
-                  <td style={{ fontWeight: 'bold' }}>100% ✅</td>
+                  <td><span className="badge">Procesos Internos</span></td>
+                  <td>Implementar un sistema centralizado de monitoreo y gestión de incidentes que permitan detectar fallas y generar alertas automáticas al área correspondiente.</td>
                 </tr>
                 <tr>
                   <td><span className="badge badge-danger">Aprendizaje</span></td>
-                  <td>Programa interno de innovación tecnológica (propuestas/año)</td>
-                  <td style={{ fontWeight: 'bold' }}>3 💡</td>
+                  <td>Crear un programa interno de innovación tecnológica dónde cada año se presenten al menos 3 propuestas de mejora en procesos o servicios por parte de los equipos de trabajo.</td>
                 </tr>
               </tbody>
             </table>

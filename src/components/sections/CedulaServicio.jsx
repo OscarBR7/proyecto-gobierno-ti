@@ -6,12 +6,8 @@ function CedulaServicio() {
       <div className="card">
         <h2 className="card-title">Cédula de Servicio (ITIL)</h2>
         <div className="card-content">
-          <p style={{ marginBottom: '2rem', color: 'var(--text-muted)' }}>
-            Definición formal del servicio TI, estableciendo alcances, responsabilidades y niveles de servicio acordados.
-          </p>
-
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '2rem', marginBottom: '2rem' }}>
-            <div className="table-container">
+            <div style={{ background: 'var(--bg-dark)', padding: '1.5rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)' }}>
               <table>
                 <tbody>
                   <tr>
@@ -20,15 +16,15 @@ function CedulaServicio() {
                   </tr>
                   <tr>
                     <td style={{ fontWeight: 'bold', background: 'var(--bg-dark)' }}>Nombre</td>
-                    <td>Consultoría IA</td>
+                    <td>EmpresIA</td>
                   </tr>
                   <tr>
-                    <td style={{ fontWeight: 'bold', background: 'var(--bg-dark)' }}>Propietario</td>
-                    <td>Dirección de TI</td>
+                    <td style={{ fontWeight: 'bold', background: 'var(--bg-dark)' }}>Departamento</td>
+                    <td>Cómputo</td>
                   </tr>
                   <tr>
-                    <td style={{ fontWeight: 'bold', background: 'var(--bg-dark)' }}>Criticidad</td>
-                    <td><span className="badge badge-danger">Alta</span></td>
+                    <td style={{ fontWeight: 'bold', background: 'var(--bg-dark)' }}>Nombre del servicio</td>
+                    <td>Consultoría e Implementación de Soluciones de Inteligencia Artificial para Optimización de Procesos Empresariales</td>
                   </tr>
                 </tbody>
               </table>
@@ -37,10 +33,11 @@ function CedulaServicio() {
             <div style={{ background: 'var(--bg-dark)', padding: '1.5rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-color)' }}>
               <h3 style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>Alcance del Servicio</h3>
               <ul style={{ paddingLeft: '1.5rem', color: 'var(--text-secondary)' }}>
-                <li style={{ marginBottom: '0.5rem' }}>Análisis de procesos empresariales actuales.</li>
-                <li style={{ marginBottom: '0.5rem' }}>Diseño de modelos de IA predictivos.</li>
-                <li style={{ marginBottom: '0.5rem' }}>Implementación de infraestructura en Azure.</li>
-                <li style={{ marginBottom: '0.5rem' }}>Capacitación y soporte post-implementación.</li>
+                <li style={{ marginBottom: '0.5rem' }}>Evaluación de procesos actuales y detección de oportunidades para implementar IA.</li>
+                <li style={{ marginBottom: '0.5rem' }}>Diseño y desarrollo de modelos predictivos, sistemas de automatización y análisis avanzado de datos.</li>
+                <li style={{ marginBottom: '0.5rem' }}>Integración con sistemas existentes para asegurar compatibilidad y funcionamiento continuo.</li>
+                <li style={{ marginBottom: '0.5rem' }}>Aseguramiento del cumplimiento con normativas de seguridad, privacidad y gestión de datos.</li>
+                <li style={{ marginBottom: '0.5rem' }}>Capacitación al personal y acompañamiento en la adopción del nuevo flujo tecnológico.</li>
               </ul>
             </div>
           </div>
@@ -50,26 +47,26 @@ function CedulaServicio() {
             <table>
               <thead>
                 <tr>
-                  <th>Métrica</th>
-                  <th>Objetivo</th>
-                  <th>Penalización</th>
+                  <th>Tipo de nivel de servicio</th>
+                  <th>Compromiso del nivel de servicio</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Disponibilidad del Sistema</td>
-                  <td style={{ fontWeight: 'bold', color: 'var(--success)' }}>99.9%</td>
-                  <td>Descuento 5% mensual</td>
+                  <td>Acceso a la plataforma de IA y APIs de inferencia con una disponibilidad del 95%, salvo mantenimientos programados notificados con al menos 24 horas de anticipación.</td>
                 </tr>
                 <tr>
-                  <td>Tiempo de Respuesta (Soporte)</td>
-                  <td style={{ fontWeight: 'bold', color: 'var(--secondary)' }}>&lt; 4 horas</td>
-                  <td>Revisión de contrato</td>
+                  <td>Soporte vía remota y presencial</td>
+                  <td>Respuesta a solicitudes de soporte remoto en un máximo de 30 minutos. Soporte presencial dentro de las 4 horas hábiles posteriores al reporte.</td>
                 </tr>
                 <tr>
-                  <td>Resolución de Incidentes Críticos</td>
-                  <td style={{ fontWeight: 'bold', color: 'var(--secondary)' }}>&lt; 8 horas</td>
-                  <td>Auditoría de servicio</td>
+                  <td>Confidencialidad</td>
+                  <td>Garantizar la protección de datos utilizados para entrenamiento y uso del modelo conforme a la LFPDPPP, ISO 27001 y políticas internas de privacidad. Acceso estrictamente controlado y monitoreado.</td>
+                </tr>
+                <tr>
+                  <td>Seguridad</td>
+                  <td>Monitoreo continuo de la integridad del modelo y su infraestructura. Aplicación de actualizaciones críticas y parches de seguridad en un plazo menor a 12 horas tras ser identificados. Verificación periódica de logs y accesos.</td>
                 </tr>
               </tbody>
             </table>

@@ -37,18 +37,6 @@ function Arquitectura() {
                 src="/pdfs/Arquitectura_del_servicio.png"
                 title="Diagrama de Arquitectura Técnica"
               />
-              <div style={{
-                fontSize: '0.85rem',
-                color: 'var(--text-muted)',
-                fontStyle: 'italic',
-                textAlign: 'center',
-                marginTop: '1rem',
-                background: 'rgba(255,255,255,0.02)',
-                padding: '1rem',
-                borderRadius: '8px'
-              }}>
-                El diagrama ilustra el flujo de datos desde la ingesta hasta el consumo del modelo, destacando las capas de seguridad y almacenamiento.
-              </div>
             </div>
           </div>
         </div>

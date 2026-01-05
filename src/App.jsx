@@ -36,7 +36,7 @@ function App() {
     { id: 'metas-ti', title: 'Metas de TI', component: MetasTI },
     { id: 'cascada-metas', title: 'Cascada de Metas', component: CascadaMetas },
     { id: 'mapa-estrategico', title: 'Mapa Estratégico', component: MapaEstrategico },
-    { id: 'caso-negocio', title: 'Caso de Negocio', component: CasoNegocio },
+    { id: 'caso-negocio', title: 'Factibilidad y Caso de Negocio', component: CasoNegocio },
     { id: 'cedula-servicio', title: 'Cédula de Servicio', component: CedulaServicio },
     { id: 'arquitectura', title: 'Arquitectura del Servicio', component: Arquitectura },
     { id: 'inventario', title: 'Inventario de Activos', component: Inventario },
@@ -50,25 +50,25 @@ function App() {
 
   return (
     <div className="app-container">
-      <Navigation 
-        sections={sections} 
-        currentSection={currentSection} 
+      <Navigation
+        sections={sections}
+        currentSection={currentSection}
         setCurrentSection={setCurrentSection}
         isMobileOpen={isMobileOpen}
         setIsMobileOpen={setIsMobileOpen}
       />
-      
+
       <main className="main-content">
         <Header toggleSidebar={() => setIsMobileOpen(!isMobileOpen)} />
-        
+
         <div className="content-wrapper fade-in" key={currentSection} style={{ padding: '0' }}>
           {CurrentComponent && <CurrentComponent />}
         </div>
-        
-        <footer style={{ 
-          marginTop: '4rem', 
-          padding: '2rem', 
-          textAlign: 'center', 
+
+        <footer style={{
+          marginTop: '4rem',
+          padding: '2rem',
+          textAlign: 'center',
           borderTop: '1px solid var(--border-color)',
           color: 'var(--text-muted)',
           fontSize: '0.9rem'

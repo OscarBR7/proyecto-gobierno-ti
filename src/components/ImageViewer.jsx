@@ -16,14 +16,6 @@ function ImageViewer({ src, title }) {
         }}
         onClick={() => setIsOpen(true)}
       >
-        <h3 style={{
-          marginBottom: '1rem',
-          color: 'var(--text-main)',
-          fontFamily: 'Poppins',
-          fontSize: '1.2rem'
-        }}>
-          {title} <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: 'normal' }}>(Click para ampliar)</span>
-        </h3>
         <div style={{ overflow: 'hidden', borderRadius: 'var(--radius-sm)' }}>
           <img
             src={src}

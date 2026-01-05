@@ -4,15 +4,15 @@ function Indice() {
     { title: 'Introducción', icon: '📖', id: 'introduccion' },
     { title: 'Objetivo', icon: '🎯', id: 'objetivo' },
     { title: 'Descripción', icon: '📋', id: 'descripcion' },
-    { title: 'Misión y Visión', icon: '💎', id: 'mision-vision-valores' },
-    { title: 'Metas Corp.', icon: '🏢', id: 'metas-corporativas' },
+    { title: 'Misión, Visión y Valores', icon: '💎', id: 'mision-vision-valores' },
+    { title: 'Metas Corporativas', icon: '🏢', id: 'metas-corporativas' },
     { title: 'Metas TI', icon: '💻', id: 'metas-ti' },
-    { title: 'Cascada', icon: '📊', id: 'cascada-metas' },
-    { title: 'Mapa Strat.', icon: '🗺️', id: 'mapa-estrategico' },
-    { title: 'Caso Negocio', icon: '💼', id: 'caso-negocio' },
-    { title: 'Cédula', icon: '📄', id: 'cedula-servicio' },
-    { title: 'Arquitectura', icon: '🏗️', id: 'arquitectura' },
-    { title: 'Inventario', icon: '📦', id: 'inventario' },
+    { title: 'Cascada de Metas', icon: '📊', id: 'cascada-metas' },
+    { title: 'Mapa Estratégico', icon: '🗺️', id: 'mapa-estrategico' },
+    { title: 'Factibilidad y Caso de Negocio', icon: '💼', id: 'caso-negocio' },
+    { title: 'Cédula de Servicio', icon: '📄', id: 'cedula-servicio' },
+    { title: 'Arquitectura del Servicio', icon: '🏗️', id: 'arquitectura' },
+    { title: 'Inventario de Activos', icon: '📦', id: 'inventario' },
     { title: 'Riesgos', icon: '⚠️', id: 'matriz-riesgos' },
     { title: 'BIA Táctico', icon: '⏱️', id: 'bia-tactico' },
     { title: 'BIA Ops.', icon: '🔄', id: 'bia-operacional' },
@@ -73,10 +73,6 @@ function Indice() {
             </div>
           </div>
         ))}
-      </div>
-
-      <div style={{ textAlign: 'center', marginTop: '3rem', color: 'var(--text-muted)' }}>
-        <p>Utilice la barra lateral de navegación para acceder a cada sección.</p>
       </div>
     </div>
   );

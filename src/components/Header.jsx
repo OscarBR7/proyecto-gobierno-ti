@@ -51,7 +51,6 @@ function Header({ toggleSidebar }) {
         }} className="header-info">
           <span>7CV2</span>
           <span style={{ width: '1px', height: '12px', background: 'var(--border-color)' }}></span>
-          <span>Equipo 1</span>
         </div>
 
         <div style={{

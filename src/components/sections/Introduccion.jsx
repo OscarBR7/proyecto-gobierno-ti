@@ -11,7 +11,6 @@ function Introduccion() {
           alignItems: 'center'
         }}>
           <div>
-            <span className="badge">Contexto</span>
             <h2 style={{ marginTop: '0.5rem', marginBottom: 0 }}>Introducción</h2>
           </div>
         </div>

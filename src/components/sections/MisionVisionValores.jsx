@@ -3,7 +3,7 @@ function MisionVisionValores() {
     { title: 'Innovación', desc: 'Fomentamos la creación de soluciones disruptivas basadas en IA para transformar los procesos empresariales.', icon: '💡' },
     { title: 'Ética y Transparencia', desc: 'Aplicamos la inteligencia artificial con responsabilidad, garantizando el uso ético de los datos y algoritmos.', icon: '⚖️' },
     { title: 'Compromiso', desc: 'Trabajamos en alianza con cada organización para ofrecer soluciones a la medida de sus necesidades.', icon: '🤝' },
-    { title: 'Excelencia Técnica', desc: 'Nos mantenemos en actualización constante en tecnologías de IA para garantizar la calidad y eficiencia.', icon: '⚙️' },
+    { title: 'Excelencia Técnica', desc: 'Nos mantenemos en actualización constante en tecnologías de IA para garantizar la calidad y eficiencia de nuestros servicios.', icon: '⚙️' },
     { title: 'Colaboración', desc: 'Promovemos el trabajo en equipo y la co-creación con nuestros clientes para alcanzar resultados de alto impacto.', icon: '👥' },
     { title: 'Sostenibilidad', desc: 'Buscamos que nuestras soluciones contribuyan al crecimiento de las empresas sin descuidar el impacto social.', icon: '🌱' }
   ];
@@ -20,7 +20,7 @@ function MisionVisionValores() {
           <div className="card-content">
             <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
               Ofrecer soluciones de <strong style={{ color: 'var(--secondary)' }}>inteligencia artificial innovadoras</strong> y confiables que optimicen los procesos empresariales, impulsen la
-              eficiencia operativa y faciliten la toma de decisiones estratégicas, generando valor sostenible para nuestros clientes.
+              eficiencia operativa y faciliten la toma de decisiones estratégicas, generando valor sostenible para nuestros clientes y sus organizaciones.
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ function MisionVisionValores() {
           <div className="card-content">
             <p style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
               Ser la empresa <strong style={{ color: 'var(--accent)' }}>líder en servicios de IA en América Latina</strong>, reconocida por transformar los procesos de negocio
-              mediante tecnologías inteligentes que promuevan la competitividad, la innovación y el crecimiento digital.
+              mediante tecnologías inteligentes que promuevan la competitividad, la innovación y el crecimiento digital de las empresas.
             </p>
           </div>
         </div>

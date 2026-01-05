@@ -121,7 +121,7 @@ function Navigation({ sections, currentSection, setCurrentSection, isMobileOpen,
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
             <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--success)' }}></div>
-            <span>v1.0.0 • IPN ESCOM</span>
+            <span>IPN ESCOM</span>
           </div>
         </div>
       </nav>

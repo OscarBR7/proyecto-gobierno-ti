@@ -7,21 +7,19 @@ function Descripcion() {
         <h2 className="card-title">Descripción del Servicio</h2>
         <div className="card-content">
           <p style={{ marginBottom: '2rem', fontSize: '1.05rem', color: 'var(--text-muted)' }}>
-            Dirigido a empresas de distintos sectores que buscan mejorar la eficiencia y competitividad de sus procesos mediante el uso de
-            inteligencia artificial. El servicio abarca desde el diagnóstico y análisis hasta la implementación de soluciones automatizadas.
+            Dirigido a empresas de distintos sectores que buscan mejorar la eficiencia y competitividad de sus procesos mediante el uso de inteligencia artificial. El servicio abarca desde el diagnóstico y análisis hasta la implementación de soluciones automatizadas.
           </p>
 
           <h3 style={{ color: 'var(--text-main)', fontFamily: 'Poppins', marginTop: '2rem', marginBottom: '1.5rem', fontSize: '1.2rem' }}>
-            Servicios Incluidos
+            Alcance del Servicio
           </h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
             {[
-              "Diagnóstico de procesos y detección de automatización",
-              "Desarrollo de modelos ML (Predicción, Clasificación)",
-              "Implementación de RPA para tareas repetitivas",
-              "Integración con ERP/CRM y bases de datos",
-              "Monitoreo y mantenimiento de modelos",
-              "Consultoría estratégica para transformación digital"
+              "Evaluación de procesos actuales y detección de oportunidades para implementar IA.",
+              "Diseño y desarrollo de modelos predictivos, sistemas de automatización y análisis de datos.",
+              "Integración con sistemas existentes para asegurar la compatibilidad y funcionamiento contínuo.",
+              "Aseguramiento del cumplimiento de normativas de seguridad, privacidad y gestión de datos.",
+              "Capacitación al personal y acompañamiento en la adopción del nuevo flujo tecnológico.",
             ].map((item, i) => (
               <div key={i} style={{
                 padding: '1rem',
@@ -39,7 +37,7 @@ function Descripcion() {
           </div>
 
           <h3 style={{ color: 'var(--text-main)', fontFamily: 'Poppins', marginTop: '2rem', marginBottom: '1rem', fontSize: '1.2rem' }}>
-            Stack Tecnológico
+            Stack Tecnológico Utilizado
           </h3>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
             {tecnologias.map(tech => (
