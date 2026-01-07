@@ -26,7 +26,7 @@ function MapaEstrategico() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
             <div>
               <ImageViewer
-                src="/pdfs/mapa_metas_corporativas.jpg"
+                src="/pdfs/mapa_metas_corporativas2.jpeg"
                 title="Mapa Estrategico de Metas Corporativas"
               />
             </div>
